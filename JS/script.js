@@ -24,7 +24,6 @@ const ticketPrice = totalKm * priceKm;
 console.log (ticketPrice, typeof ticketPrice);
 
 
-
 //Prezzo del biglietto
 
 let message = "Il prezzo del tuo biglietto è €"+ ticketPrice;
