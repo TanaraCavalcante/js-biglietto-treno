@@ -1,6 +1,7 @@
 //Raccolta de dati della pag
 const messagePrice = document.getElementById('info')
 
+
 /*--------------------------
        RACCOLTA DATI
 --------------------------*/
@@ -19,20 +20,23 @@ console.log(age, typeof age);
 const priceKm = 0.89;
 console.log (priceKm, typeof priceKm);
 
-
-//Prezzo del biglietto
-let message = "Il prezzo del tuo biglietto è €";
-
 const ticketPrice = totalKm * priceKm;
 console.log (ticketPrice, typeof ticketPrice);
 
-message += ticketPrice
 
-if (age > 18) {
-  const minAge = parseFloat((ticketPrice - (ticketPrice * 0.2)).toFixed(2))
-  console.log (minAge, typeof minAge)  
+
+//Prezzo del biglietto
+
+let message = "Il prezzo del tuo biglietto è €"+ ticketPrice;
+
+if (age < 18) {
+  const minAge = parseFloat((ticketPrice - (ticketPrice * 0.2)).toFixed(2));
+  console.log (minAge, typeof minAge) 
+  message = "Il prezzo del tuo biglietto è €" + minAge
+
 } else if (age > 65){
-  const maxAge = parseFloat((ticketPrice - (ticketPrice * 0.4)).toFixed(2))
+  const maxAge = parseFloat((ticketPrice - (ticketPrice * 0.4)).toFixed(2));
   console.log (maxAge, typeof maxAge)
-}
+  message = "Il prezzo del tuo biglietto è €" + minAge
+} 
 
