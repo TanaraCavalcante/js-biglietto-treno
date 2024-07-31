@@ -5,7 +5,7 @@ const messagePrice = document.getElementById('info')
        RACCOLTA DATI
 --------------------------*/
 //Chiedi all'utente quanti km vuole percorrere
-const totalKm = prompt('Quanti KM vuoi percorrere?', 16);
+const totalKm = prompt('Quanti KM vuoi percorrere?', 100);
 console.log(totalKm);
 
 //Chiedi all'utente la sua età
@@ -35,6 +35,12 @@ if (age < 18) {
 } 
 
 console.log (message)
+
+/*---------------------------
+      FASI DI OUTPUT
+----------------------------*/
+//Mostro in pagina
+messagePrice.innerHTML = (message)
 
 
 
