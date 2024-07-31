@@ -22,16 +22,16 @@ console.log (priceKm, typeof priceKm);
 
 //Prezzo del biglietto
 
-const ticketPrice = parseFloat((totalKm * priceKm).toFixed(2));
+const ticketPrice = totalKm * priceKm;
 
-let message = "Il prezzo del tuo biglietto è €"+ ticketPrice;
+let message = "Il prezzo del tuo biglietto è € "+ ticketPrice;
 
 if (age < 18) {
-  const minAge = parseFloat((ticketPrice - (ticketPrice * 0.2)).toFixed(2));
-  message = "Il prezzo del tuo biglietto è €" + minAge;
+  const minAge = ticketPrice - (ticketPrice * 0.2);
+  message = "Il prezzo del tuo biglietto è € " + minAge;
 } else if (age > 65){
-  const maxAge = parseFloat((ticketPrice - (ticketPrice * 0.4)).toFixed(2));
-  message = "Il prezzo del tuo biglietto è €" + maxAge;
+  const maxAge = ticketPrice - (ticketPrice * 0.4);
+  message = "Il prezzo del tuo biglietto è € " + maxAge;
 } 
 
 console.log (message)
