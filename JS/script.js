@@ -15,5 +15,5 @@ console.log(age)
       FASI DI ELABORAZIONE
 ----------------------------*/
 //Preparo della variabile PREZZO per Km
-const priceKm = parseInt(0.89)
+const priceKm = 0.89
 console.log (priceKm, typeof priceKm)
